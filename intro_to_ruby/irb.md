@@ -56,6 +56,8 @@ Create unique id
 * Perform process on this list
 `Dir.glob('*.txt')`{{execute}}
 
+These are just a few of the very basics. Ruby can be do a whole lot more.
+
 # Exit interactive session
 
 It's easy to exit this terminal at any time

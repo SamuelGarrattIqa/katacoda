@@ -2,23 +2,29 @@
   "title": "Introduction to Ruby programming language",
   "description": "Introduction to Ruby showing IRB and basic syntax",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
         "title": "Interactive Ruby",
-        "text": "step1.md"
+        "text": "irb.md"
       },
       {
         "title": "Calling a script",
-        "text": "step2.md"
+        "text": "calling_script.md"
       }
     ],
     "assets": {
       "client": [
         {
-          "file": "calculations.rb",
+          "file": "calculator.rb",
           "target": "~/"
+        },
+        {
+          "file": "features/addition.feature", "target": "~/"
+        },
+        {
+          "file": "features/step_definitions/addition.rb", "target": "~/"
         }
       ],
       "host01": [
@@ -29,14 +35,18 @@
       ]
     },
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "gem install cucumber rspec"
     },
     "finish": {
       "text": "finish.md"
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "icon": "fa-ruby",
+    "uimessage1": "Terminal in Ruby image",
+    "uisettings": "ruby"
   },
   "backend": {
     "imageid": "ruby"
