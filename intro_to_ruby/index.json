@@ -21,10 +21,10 @@
           "target": "~/"
         },
         {
-          "file": "features/addition.feature", "target": "~/"
+          "file": "features/addition.feature", "target": "~/features/"
         },
         {
-          "file": "features/step_definitions/addition.rb", "target": "~/"
+          "file": "features/step_definitions/addition.rb", "target": "~/features/step_definitions/"
         }
       ]
     },
