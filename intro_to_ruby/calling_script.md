@@ -13,7 +13,7 @@ This ruby script can be executed with the `ruby` command.
 # Execute script with parameter
 
 This same script uses the first parameter if set to override the name of the person. Try it out
-`ruby calculations.rb Sally`{{execute}}
+`ruby introduce.rb Sally`{{execute}}
 
 # Execute ruby code within context (Cucumber)
 
@@ -29,3 +29,5 @@ expressions matched.
 `features/step_definitions/addition.rb`{{open}}
 
 This code can be run with the `cucumber` command. `cucumber`{{execute}}
+
+This has just run some tests and shown the result.

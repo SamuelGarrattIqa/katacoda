@@ -2,7 +2,7 @@
   "title": "Introduction to Ruby programming language",
   "description": "Introduction to Ruby showing IRB and basic syntax",
   "difficulty": "Beginner",
-  "time": "15 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
@@ -12,6 +12,18 @@
       {
         "title": "Calling a script",
         "text": "calling_script.md"
+      },
+      {
+        "title": "Understand basics of an object",
+        "text": "understanding_object.md"
+      },
+      {
+        "title": "Basics objects",
+        "text": "basic_objects.md"
+      },
+      {
+        "title": "Using Methods",
+        "text": "using_methods.md"
       }
     ],
     "assets": {
@@ -39,7 +51,8 @@
   "environment": {
     "uilayout": "editor-terminal",
     "icon": "fa-ruby",
-    "uimessage1": "Terminal in Ruby image"
+    "uimessage1": "\u001b[32mTerminal in Ruby image\u001b[m\r\n",
+    "uisettings": "ruby"
   },
   "backend": {
     "imageid": "ruby"

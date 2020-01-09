@@ -4,8 +4,11 @@ terminal and editor.
 It is composed of: 
 
 * Step 1 - Use an interactive terminal to execute some commands in Ruby and see their result
-* Step 2 - Understand how to execute a ruby script
-* Step 3 - Understand basics of interacting with an object (TODO)
-* Step 4 - Understand some of the basic objects (TODO)
+* Step 2 - How to execute a ruby script
+* Step 3 - Understand basics of an object
+* Step 4 - Understand some of the basic objects
+* Step 5 - Using methods on objects
+* Step 6 - Installing Ruby gems and using bundler (TODO)
+* Step 7 - Use rubocop to help with learning best practices (TODO)
 
 The code making up this tutorial is [here](https://gitlab.com/samuel-garratt/katacode-scenarios/tree/master/intro_to_ruby)
