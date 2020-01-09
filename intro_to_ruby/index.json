@@ -15,6 +15,12 @@
       }
     ],
     "assets": {
+      "client": [
+        {
+          "file": "calculations.rb",
+          "target": "~/"
+        }
+      ],
       "host01": [
         {
           "file": "calculations.rb",
