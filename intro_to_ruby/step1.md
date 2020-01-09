@@ -35,8 +35,10 @@ The result is shown as `25`
 `('A0'..'B2').to_a`{{execute}}
 
 * A unique id
+
 Require library, supporting code
 `require 'securerandom'`{{execute}}
+
 Create unique id
 `SecureRandom.uuid`{{execute}}
 
@@ -46,7 +48,7 @@ Create unique id
 `File.write 'test.txt', 'TEST CONTENT'`{{execute}}
 
 * Read from file
-`File.read 'test.txt`{{execute}}
+`File.read 'test.txt'`{{execute}}
 
 * Create list of files
 `('a'..'f').to_a.each { |n| File.write "#{n}.txt", n }`{{execute}}

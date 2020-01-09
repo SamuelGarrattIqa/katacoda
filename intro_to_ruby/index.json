@@ -2,7 +2,7 @@
   "title": "Introduction to Ruby programming language",
   "description": "Introduction to Ruby showing IRB and basic syntax",
   "difficulty": "Beginner",
-  "time": "5 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
@@ -22,7 +22,10 @@
     },
     "assets": {
       "host01": [
-        {"file": "calculations.rb", "target": "~/"}
+        {
+          "file": "calculations.rb",
+          "target": "~/"
+        }
       ]
     }
   },
