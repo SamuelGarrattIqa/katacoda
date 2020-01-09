@@ -2,13 +2,13 @@ Lines of code can be put together and executed sequentially from within ruby fil
 
 The extension for these files is `.rb`. Below is a simple file that contains a class
 and some code to call a method on it.
-`calculator.rb`{{open}}
+`introduce.rb`{{open}}
 
 # Execute ruby script
 
 This ruby script can be executed with the `ruby` command. 
 
-`ruby calculator.rb`{{execute}}
+`ruby introduce.rb`{{execute}}
 
 # Execute script with parameter
 
