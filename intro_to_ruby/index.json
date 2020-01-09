@@ -1,12 +1,12 @@
 {
-  "title": "First Scenario",
-  "description": "This is my first scenario",
+  "title": "Introduction to Ruby programming language",
+  "description": "Introduction to Ruby showing IRB and basic syntax",
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Interactive Ruby",
         "text": "step1.md"
       }
     ],
