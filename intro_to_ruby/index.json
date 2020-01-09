@@ -26,12 +26,6 @@
         {
           "file": "features/step_definitions/addition.rb", "target": "~/"
         }
-      ],
-      "host01": [
-        {
-          "file": "calculations.rb",
-          "target": "~/"
-        }
       ]
     },
     "intro": {
