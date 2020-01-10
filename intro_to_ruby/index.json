@@ -28,6 +28,14 @@
       {
         "title": "Creating your own class",
         "text": "own_class.md"
+      },
+      {
+        "title": "Installing ruby gems",
+        "text": "installing_gems.md"
+      },
+      {
+        "title": "Rubocop",
+        "text": "rubocop.md"
       }
     ],
     "assets": {

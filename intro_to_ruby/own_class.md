@@ -65,4 +65,6 @@ end
 
 Now you can make a new bird `bird = Bird.new height: 5`{{execute}} and make it 
 fly up `bird.ascend`{{execute}} and down `bird.descend`{{execute}} and check the height `bird.height`{{execute}}
-calling the methods defined in the `Module`. 
+calling the methods defined in the `Module`.
+
+Now you can `exit`{{execute}} IRB. 
