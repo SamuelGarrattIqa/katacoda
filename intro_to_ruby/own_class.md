@@ -18,7 +18,8 @@ Now create an instance of the object. `MyClass.new`{{execute}}.
 # Class inheriting from another
 You can easily extend an existing class by using the `<` after the class name followed by another class.
 
-For example to create your class from an array. The `join` method comes from the Array class.
+The example below creates a class by subclassing/inheriting from the `Array` class. 
+The `join` method comes from the Array class.
 The `to_csv` method calls it and returns a `String` with all items of the array being comma separated
 
 `
@@ -48,7 +49,8 @@ module Flying
 end
 `{{execute}}
 
-> The above shows use of the [Elvis operator](https://en.wikipedia.org/wiki/Elvis_operator) for shortcut if else
+> The above shows use of the [Elvis operator](https://en.wikipedia.org/wiki/Elvis_operator) for a 
+> shortcut if else statement
 
 Then create a class that includes it
 `

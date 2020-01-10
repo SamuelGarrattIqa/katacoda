@@ -114,7 +114,8 @@ Then when we call `echo`{{execute}}, we will get the `DEFAULT INPUT` that was se
 
 By using a hash as a parameter, we can have a flexible number of parameters in a method.
 
-For example:
+For example create a method that will take all the parameters passed and create tags out of the keys and put the values
+as their contents. 
 
 `
 def html_tags(tags)
@@ -139,7 +140,7 @@ or
 When you want to have parameters where the order does not matter or you would rather someone explicitly say the 
 parameter name, you can use a colon after the parameter name and then the default value.
 
-For example
+For example create an introduce method where first_name and last_name can be specified in any order.
 
 `
 def introduce(first_name: 'Test', last_name: 'Last')
