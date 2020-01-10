@@ -39,27 +39,27 @@ The result is shown as `25`
 Require library, supporting code
 `require 'securerandom'`{{execute}}
 
-Create unique id
+Create a unique id using it
 `SecureRandom.uuid`{{execute}}
 
-# Work with files
+# Working with files
 
 * Create file
 `File.write 'test.txt', 'TEST CONTENT'`{{execute}}
+You will see appear above in the editor.
 
 * Read from file
 `File.read 'test.txt'`{{execute}}
 
-* Create list of files
+* Create list of files (from a to f each ending with `.txt` and each having their letter as content)
 `('a'..'f').to_a.each { |n| File.write "#{n}.txt", n }`{{execute}}
 
-* Perform process on this list
+* Retrieve list of files matching regular expression
 `Dir.glob('*.txt')`{{execute}}
 
 These are just a few of the very basics. Ruby can be do a whole lot more.
 
 # Exit interactive session
 
-It's easy to exit this terminal at any time
-
+It's easy to exit this interactive terminal at any time with
 `exit`{{execute}}

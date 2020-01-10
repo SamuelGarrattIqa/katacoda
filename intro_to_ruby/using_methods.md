@@ -1,5 +1,3 @@
-# Methods
-
 Methods are key to performing pretty much anything in Ruby. 
 Just as your keyboard and mouse allow you to interact with a computer, so methods allow you to
 interact with objects.
@@ -16,16 +14,17 @@ def my_first_method
 end
 `{{execute}}
 
-What's with the underscores you may ask? In Ruby, the convention for classes is to use CamelCase 
+What's with the underscores you may ask? In Ruby, the convention for `classes` is to use `CamelCase` 
 (or more precisely PascalCase as CamelCase can have other forms like thisKindOfForm)
-and for methods and variables either 'ALLCAPS' or 'snake_case'.
+and for `methods` and `variables` use `snake_case`. 
+`ALLCAPS` is used for variables that are [CONSTANTS](https://www.rubyguides.com/2017/07/ruby-constants/) and 
+classes that are abbreviations like `JSON` or acronyms like `XML`.
 
-Run your method. `my_first_method`{{execute}} You should see `It did something`
+Run your method. `my_first_method`{{execute}} It returned `It did something`
 
-The 'def' keyword tells Ruby you're defining a method. The 'end' keyword tells Ruby the definition's finished. You'll understand this more in the future
-session on BLOCKS.
-The 'return' is actually another key method telling the method to immediately return with the parameters passed to it. 
-This 'return' word is necessary in many languages but in Ruby by default the last line of a method is what will be returned.
+The `def` keyword tells Ruby you're defining a method. The `end` keyword tells Ruby the definition's finished. 
+The `return` is actually another key method telling the method to immediately return with the parameters passed to it. 
+This `return` word is necessary in many languages but in Ruby by default the last line of a method is what will be returned.
 
 Therefore the previous method can also be
 
@@ -42,7 +41,7 @@ it's actually an object. So you can do the following
 
 # Conventions
 
-## Question mark
+_Question mark_
 
 By convention, a method ending in a question mark returns a true or false. 
 
@@ -55,7 +54,7 @@ Example:
 * Create empty list `empty_list = []`{{execute}}
 * Check if list is empty `empty_list.empty?`{{execute}} Returns true as expected
 
-## Getters and setters
+_Getters and setters_
 
 The convention for any method that sets something is with a '=' at the end of it and to retrieve the same value, 
 just use the name itself.
@@ -67,7 +66,8 @@ Example:
 
 # Parameters
 
-A method that always does the same thing is pretty boring. It's better to be able to pass parameters to it and it act on these.
+With parameters you are able to pass parameters to it and it act on these. 
+Specify parameters by putting their names (comma separated) within brackets.  
 
 `
 def echo(input)
@@ -75,68 +75,69 @@ def echo(input)
 end
 `{{execute}}
 
-This pretty much just returns whatever you passed to it. Pretty pointless but I hope you get the idea.
-If you from other programming languages you might have seen a method declaration like
+This returns whatever you passed to it. 
 
-```
-Object echo(Object input) {
-  return input
-}
-```
+Run your method with different parameters `echo 'hi'`{{execute}}, `echo 43`{{execute}}, `echo 1.3`{{execute}}
 
-Run your method in irb
-```
-echo  'hi'
-=> "hi"
+The brackets are not necessary so you can also define the method as 
 
-echo 43
-=> 43
-```
+`
+def echo input
+   input
+end
+`{{execute}}
 
-Ruby is not a strict as these languages, allowing you not to explicitly specify the class of each parameter. This allows a great amount of flexiblity and also simplifies your code.
+and it will behave the same way (though I think the first approach is clearer).
 
-## Default values
+Ruby is not a strict as these languages, allowing you not to explicitly specify the class of each parameter. 
 
-If we need to run the echo method without specifying a parameter we will get an error.
-```
-echo
-ArgumentError: wrong number of arguments (given 0, expected 1)
-```
+This allows a great amount of flexibility and also simplifies your code. You can easily add validation if specific
+class types are not allowed or you could also perform a conversion on the input so that you're sure it's in the
+correct state.
 
-We can easily specify a default value in the method declaration by saying it equals a value when we declare the paremeter.
+# Default values
+
+If we need to run the echo method without specifying a parameter we will get an ArgumentError error.
+`echo`{{execute}}
+
+We can easily specify a default value in the method declaration by saying it equals a value when we declare the parameter.
 E.g
 
-```ruby
-def echo input='DEFAULT INPUT'
+`
+def echo(input='DEFAULT INPUT')
   input
 end
-```
+`{{execute}}
 
 Then when we call `echo`, we will get the 'DEFAULT INPUT' that was set.
 
-## Flexible number parameters
+# Flexible number of parameters
 
 By using a hash as a parameter, we can have a flexible number of parameters in a method.
 
 For example:
-```ruby
+`
 def html_tags(tags)
+  raise ArgumentError, "Must pass list to method" unless tags.respond_to? :each
+  
   tags.each do |tag, tag_value|
     puts "<#{tag}>#{tag_value}</#{tag}>"
   end
 end 
-```
+`{{execute}}
 
-This method uses a loop. Don't worry about that for now. It will be covered later. The idea is that you can see the tags can have an arbitrary number of parameters.
+This method uses a loop and iterates through it creating a tag with a key and the value inside it. 
+The idea is that you can see the `tags` parameter can have an arbitrary number of parameters.
 
 Then you can call it with an arbitrary number of parameters
-`html_tags b: 'test', i: 'value', h1: 'Heading'`
+`html_tags b: 'test', i: 'value', h1: 'Heading'`{{execute}}
 or
-`html_tags a: 'link', p: 'paragraph'`
+`html_tags a: 'link', p: 'paragraph'`{{execute}}
 
-## Hash parameters
+# Hash parameters
 
-When you want to have parameters where the order does not matter or you would rather someone explicitly say the parameter name, you can use a colon after the parameter name and then the default value.
+When you want to have parameters where the order does not matter or you would rather someone explicitly say the 
+parameter name, you can use a colon after the parameter name and then the default value.
 
 For example
 
