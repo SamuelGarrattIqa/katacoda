@@ -24,6 +24,10 @@
       {
         "title": "Using Methods",
         "text": "using_methods.md"
+      },
+      {
+        "title": "Creating your own class",
+        "text": "own_class.md"
       }
     ],
     "assets": {

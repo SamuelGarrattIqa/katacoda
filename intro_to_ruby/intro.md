@@ -8,7 +8,8 @@ It is composed of:
 * Step 3 - Understand basics of an object
 * Step 4 - Understand some of the basic objects
 * Step 5 - Using methods on objects
-* Step 6 - Installing Ruby gems and using bundler (TODO)
-* Step 7 - Use rubocop to help with learning best practices (TODO)
+* Step 6 - Creating your own class
+* Step 7 - Installing Ruby gems and using bundler (TODO)
+* Step 8 - Use rubocop to help with learning best practices (TODO)
 
 The code making up this tutorial is [here](https://gitlab.com/samuel-garratt/katacode-scenarios/tree/master/intro_to_ruby)
