@@ -2,9 +2,10 @@
 
 Following are some the most basic classes in Ruby and examples of how to set them. (They assume `irb` is open)
 
-* Integer docs [here](https://ruby-doc.org/core-2.6.3/Integer.html). An integer is a whole number
-* Create integer with value of 5 `int_object = 5`{{execute}}. The object is stored in a local variable called `int_object`
-* Retrieve it's value by simply referencing it. `int_object`{{execute}}
+* Integer docs [here](https://ruby-doc.org/core-2.6.3/Integer.html). 
+  An integer is a whole number
+  * Create integer with value of 5 `int_object = 5`{{execute}}. The object is stored in a local variable called `int_object`
+  * Retrieve it's value by simply referencing it. `int_object`{{execute}}
 
 * Boolean docs for [true](https://ruby-doc.org/core-2.6.3/TrueClass.html) and [false](https://ruby-doc.org/core-2.6.3/FalseClass.html)
 `true_object = true`{{execute}}

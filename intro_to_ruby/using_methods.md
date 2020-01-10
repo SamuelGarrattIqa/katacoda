@@ -35,8 +35,8 @@ end
 `{{execute}}
 
 Re run your method. `my_first_method`{{execute}}.
-Same result. Now you must have guessed it, although you see a string printed in irb when you call your class, 
-it's actually an object. So you can do the following
+Same result. Now you must have guessed it, although you see a string printed in irb when you called your method, 
+it actually returned an object. So you can do the following
 `my_first_method.class`{{execute}}
 
 # Conventions
@@ -45,7 +45,7 @@ _Question mark_
 
 By convention, a method ending in a question mark returns a true or false. 
 
-Strongly typed languages like Java would use the convention `isEmpty()` `isDigit()`, whereas Ruby has the convention 
+Other languages like Java would use the convention `isEmpty()` `isDigit()`, whereas Ruby has the convention 
 `empty?` or `digit?`.
 
 Example:
@@ -89,8 +89,7 @@ end
 
 and it will behave the same way (though I think the first approach is clearer).
 
-Ruby is not a strict as these languages, allowing you not to explicitly specify the class of each parameter. 
-
+In Ruby you do not explicitly specify the class of each parameter. 
 This allows a great amount of flexibility and also simplifies your code. You can easily add validation if specific
 class types are not allowed or you could also perform a conversion on the input so that you're sure it's in the
 correct state.
@@ -109,17 +108,17 @@ def echo(input='DEFAULT INPUT')
 end
 `{{execute}}
 
-Then when we call `echo`, we will get the 'DEFAULT INPUT' that was set.
+Then when we call `echo`{{execute}}, we will get the `DEFAULT INPUT` that was set.
 
 # Flexible number of parameters
 
 By using a hash as a parameter, we can have a flexible number of parameters in a method.
 
 For example:
+
 `
 def html_tags(tags)
   raise ArgumentError, "Must pass list to method" unless tags.respond_to? :each
-  
   tags.each do |tag, tag_value|
     puts "<#{tag}>#{tag_value}</#{tag}>"
   end
@@ -127,6 +126,7 @@ end
 `{{execute}}
 
 This method uses a loop and iterates through it creating a tag with a key and the value inside it. 
+It also shows an example of extra validation can be performed on a parameter. 
 The idea is that you can see the `tags` parameter can have an arbitrary number of parameters.
 
 Then you can call it with an arbitrary number of parameters
@@ -149,4 +149,4 @@ end
 
 Try out different combinations of parameters to the method.
 `introduce first_name: 'Bob'`{{execute}}
-`introduce last_name: 'Smith'`{{execute}}
+`introduce last_name: 'Smith', first_name: 'Anna'`{{execute}}
