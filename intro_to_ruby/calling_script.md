@@ -31,3 +31,10 @@ expressions matched.
 This code can be run with the `cucumber` command. `cucumber`{{execute}}
 
 This has just run some tests and shown the result.
+
+# Quiz
+
+>>Q1: How do you execute a single ruby file<<
+(*) ruby FILENAME
+( ) ./FILENAME
+( ) ruby execute FILENAME

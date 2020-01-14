@@ -63,8 +63,7 @@
   "environment": {
     "uilayout": "editor-terminal",
     "icon": "fa-ruby",
-    "uimessage1": "\u001b[32mTerminal in Ruby image\u001b[m\r\n",
-    "uisettings": "ruby"
+    "uimessage1": "\u001b[32mTerminal in Ruby image\u001b[m\r\n"
   },
   "backend": {
     "imageid": "ruby"

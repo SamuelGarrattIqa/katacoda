@@ -63,3 +63,8 @@ These are just a few of the very basics. Ruby can be do a whole lot more.
 
 It's easy to exit this interactive terminal at any time with
 `exit`{{execute}}
+
+# Quiz
+
+>>Q1: What do you type in a terminal to open an interactive ruby session<<
+=== irb
