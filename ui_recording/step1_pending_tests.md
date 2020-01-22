@@ -1,42 +1,14 @@
-# Initialise cucumber structure
+# Clone repo
 
-* Create code in container that has programming language that will be used in it
+Clone repo with Zalenium docker-compose setup in it
 
-`docker run -v $PWD:/home -it ruby:2.6 /bin/bash`{{execute}}
+`git clone https://gitlab.com/samuel-garratt/ui_recording.git`
 
-* Navigate to working directory
+Move into that folder
 
-`cd home`{{execute}}
+`cd ui_recording`{{execute}}
 
-* Install dependencies
+# Run tests
 
-`bundle install`
+`docker-compose -f docker-compose-demo.yml up --abort-on-container-exit --exit-code-from test`{{execute}}
 
-* Initialise cucumber repo
-
-`cucumber —init`
-
-
-# Add feature file
-
-Create a new feature file and add the following content
-`features/dev_ops.feature`{{open}}
-
-```gherkin
-Feature: Dev Ops
- 
-   IntegratonQA should know about Dev Ops so they can help companies with bridge the gap between
-   development and operations
- 
-   Scenario: Find Dev Ops blog
-     Given I am on the IntegrationQA blog page
-     When I search for 'Dev Ops'
-     Then a result is returned
- 
-   Scenario: Find Culture change blog
-     Given I am on the IntegrationQA blog page
-     When I search for 'Culture change'
-     Then a result is returned`
-```
-
-Execute `cucumber`{{execute}} to see the pending tests
