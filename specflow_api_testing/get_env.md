@@ -13,8 +13,8 @@ for any API object.
 
 # Download nuget packages
 
-`nuget restore`{{execute}}
+`dotnet restore`{{execute}}
 
 # Build solution
 
-`nuget build`{{build}}
+`dotnet build`{{execute}}
