@@ -16,6 +16,10 @@
       {
         "title": "Create first API class",
         "text": "first_api_class.md"
+      },
+      {
+        "title": "Implement step defintions",
+        "text": "implement_step_defs.md"
       }
     ],
     "intro": {

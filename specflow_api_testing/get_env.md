@@ -16,12 +16,18 @@ for any API object.
 
 # Download nuget packages
 
-`dotnet restore`{{execute}}
+These are the external dependencies the project has.
+
+`dotnet restore`{{execute}} 
 
 # Build solution
+
+This ensures that all the code can compile.
 
 `dotnet build`{{execute}}
 
 # Run tests
+
+There is only one unimplemented test that should pass.
 
 `dotnet test`{{execute}}
