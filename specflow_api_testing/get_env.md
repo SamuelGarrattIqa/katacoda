@@ -1,7 +1,7 @@
 # Clone repository
 
 Open location of editor:
-`cd /home/scrapbook`
+`cd /home/scrapbook/tutorial`
 
 `git clone https://gitlab.com/samuel-garratt/specflow_api_tests.git`{{execute}}
 
