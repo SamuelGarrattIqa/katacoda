@@ -1,47 +1,12 @@
-# Understand API we'll be talking to
+The first scenario will be to order a puppy with a specific name. 
 
-Have a look at the [petstore API](https://petstore.swagger.io/#/). This is the API that we'll be playing with in our test.
-
-You will notice that the URL for version 2 of this API is specified in the `ApiHost` constant of the `ApiCommon` class.
-
-`Lib\ApiObjects\ApiCommon.cs`{{open}}
-
-# Create API object
-
-Create a new api object within `Lib\ApiObjects` that inherits from the `BackendDataBase` class.
-
-Name the file `PetStore.cs`
-`Lib\ApiObjects\PetStore.cs`{{open}}
-
-and put in it the following details.
+Update the feature file at `Features/Puppy.feature`{{open}} with the following content:
 
 ```
-using NewNAITTest.Lib.ApiObjects;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-
-namespace SpecFlowApiTests.Lib.ApiObjects
-{
-    class PetStore : BackendDataBase
-    {
-        public override string SubPath => "pet";
-
-        public override string Description => "PetStore";
-
-        public override Dictionary<string, JToken> DefaultCreateParameters()
-        {
-            return new Dictionary<string, JToken>
-            {
-                { "name", "doggie" },
-                { "status", "available" }
-            };
-        }
-    }
-}
+Scenario: Order a Puppy with specific name
+	  Given I want a puppy with a name of 'Laddie'
+	  When I order a Puppy
+	  Then the puppy ordered has the name 'Laddie'	  
 ```
 
-The SubPath is the path AFTER the `ApiHost` set earlier. The Description is purely for display purposes when things go wrong.
-
-Within the `DefaultCreateParameters()` we are creating a dictionary of default values that will be used when performing a `POST` HTTP method to this API.
-This can be overriden.
+This is a plain english text file that should be easily understood by non technial users of the business. It should have come about through colloboration among three omegos (a dev, test analyst, and someone representing the business).
