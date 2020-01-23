@@ -1,7 +1,7 @@
 # Clone repository
 
 Open location of editor:
-`cd /home/scrapbook/tutorial`
+`cd /home/scrapbook/tutorial`{{execute}}
 
 `git clone https://gitlab.com/samuel-garratt/specflow_api_tests.git`{{execute}}
 
@@ -21,3 +21,7 @@ for any API object.
 # Build solution
 
 `dotnet build`{{execute}}
+
+# Run tests
+
+`dotnet test`{{execute}}
