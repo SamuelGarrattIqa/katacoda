@@ -15,7 +15,7 @@ Name the file `PetStore.cs`
 
 and put in it the following details.
 
-```
+```csharp
 using NewNAITTest.Lib.ApiObjects;
 using Newtonsoft.Json.Linq;
 using System;
@@ -45,3 +45,7 @@ The SubPath is the path AFTER the `ApiHost` set earlier. The Description is pure
 
 Within the `DefaultCreateParameters()` we are creating a dictionary of default values that will be used when performing a `POST` HTTP method to this API.
 This can be overriden.
+
+# Set JSON parameters using when parsing JSON response
+
+
