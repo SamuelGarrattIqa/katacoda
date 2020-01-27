@@ -6,12 +6,25 @@
   "details": {
     "steps": [
       {
-        "title": "Get initial environment",
+        "title": "Get initial code and build it",
         "text": "get_env.md"
+      },
+      {
+        "title": "Create first feature",
+        "text": "first_scenario.md"
+      },
+      {
+        "title": "Create first API class",
+        "text": "first_api_class.md"
+      },
+      {
+        "title": "Implement step defintions",
+        "text": "implement_step_defs.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData": "install.sh"
     },
     "finish": {
       "text": "finish.md"
