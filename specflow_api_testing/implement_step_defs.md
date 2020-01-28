@@ -1,9 +1,10 @@
 
 # Pending steps
 
-When doing this in visual studio, one can auto generate the step definions from the feature file.
+When doing this in visual studio, one can auto generate the step definitions from a feature file.
 
-That will produce the following content (libraries we'll use are added in also below with `using` keyword)
+That will produce the following content shown within the `StepDefinitions` namespace below.
+For convenience, the libraries we'll use later are added in also below with `using` keyword.
 
 ```csharp
 using SpecFlowApiTests.Lib.ApiObjects; // Added to reference the Api Object we defined previously
@@ -40,11 +41,15 @@ namespace SpecFlowApiTests.StepDefinitions
 
 The `ScenarioContext.Current.Pending();` indicates that a step has not been implemented. 
 
-If you run `dotnet test`{{execute}} now you will see that it has `Skipped: 1`, meaning that the test was skipped because it has not been implemented.
+Open `StepDefinitions/PuppySteps.cs`{{open}} and paste the content above into it.
+
+Run `dotnet test`{{execute}}. 
+
+You will see that it shows `Skipped: 1`, meaning that the test was skipped because it has not been implemented.
 
 # Add variable that will be used
 
-Within the `public class PuppySteps` add a variable name that will be shared across step defititions with the following code
+Within the `public class PuppySteps` add a variable name that will be shared across step definitions with the following code
 
 `private string _name;`
 

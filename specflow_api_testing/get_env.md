@@ -3,7 +3,7 @@
 Open location of editor:
 `cd /home/scrapbook/tutorial`{{execute}}
 
-`git clone https://gitlab.com/samuel-garratt/specflow_api_tests.git`{{execute}}
+`git clone https://gitlab.com/samuel-garratt/specflow_api_test.git`{{execute}}
 
 # Understand basic files
 
