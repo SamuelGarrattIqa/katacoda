@@ -12,6 +12,7 @@ using TechTalk.SpecFlow;
 using System.Collections.Generic; // Used for creating dictionaries
 using Newtonsoft.Json.Linq; // Used for creating JSON tokens
 using Newtonsoft.Json;      // Used for deserialising JSON to C# objects
+using FluentAssertions;     // Used for making assertions
 
 namespace SpecFlowApiTests.StepDefinitions
 {
@@ -51,7 +52,7 @@ You will see that it shows `Skipped: 1`, meaning that the test was skipped becau
 
 Within the `public class PuppySteps` add a variable name that will be shared across step definitions with the following code
 
-`private string _name;`
+`private string _name = "Default name"; // Name of the puppy`
 
 # Store name within variable from first step
 
@@ -61,6 +62,7 @@ Change the first step definition to have the following code:
 [Given(@"I want a puppy with a name of '(.*)'")]
         public void GivenIWantAPuppyWithANameOf(string name)
         {
+            // Store name so it can be used in a future step
             _name = name;
         }
 ```

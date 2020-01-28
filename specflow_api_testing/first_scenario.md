@@ -6,9 +6,9 @@ Update the feature file at `Features/Puppy.feature`{{open}} and add the followin
 
 ```gherkin
 Scenario: Order a Puppy with a specific name
-	  Given I want a puppy with a name of 'Laddie' # Example of using a parameter in a step definition
+	  Given I want a puppy with a name of 'Laddie'
 	  When I order a Puppy
-	  Then the puppy ordered has the name specified	  
+	  Then the puppy has the name specified  
 ```
 
 # Understand origin for scenario
@@ -21,8 +21,15 @@ of scenarios there should be a common understanding of how a feature is meant to
 
 # Understand steps
 
+## Keywords
+
 The 'When' is the critical action performed that causes a result which is verified in the 'Then'.
 In the 'Given', one specifies the background step(s), that set things up for the 'When' to be performed and
 give it the proper context. In a simple scenario, 'Given' may not be needed.
 The 'Then' step is where the assertion on the expected behaviour. Both the 'Given' and 'Then' steps can have 
 an 'And' step but the 'When' should not.
+
+## Parameterised step
+
+The first step is an example of using a parameter in a step definition which is between the single quotes. 
+This will be discussed in the next step.

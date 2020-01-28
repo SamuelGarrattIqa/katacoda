@@ -11,18 +11,18 @@ Navigate to created foler. `cd specflow_api_test`{{execute}}
 
 * Setup file where hooks are `specflow_api_test/SpecFlowApiTests/Support/SetUp.cs`{{open}}
 
-Inside the setup method `lines 11-18` is some code to set some basic settings for handling `JSON` and stores a a property `GetInformation.Client` that can be used 
+Inside the setup method `lines 13-21` is some code to set some basic settings for handling `JSON` and stores a a property `GetInformation.Client` that can be used 
 for any API object.
 
 # Download nuget packages
 
-These are the external dependencies the project has.
+These are the external dependencies the project has. Download them with:
 
 `dotnet restore`{{execute}} 
 
 # Build solution
 
-This ensures that all the code can compile.
+This ensures that all the code can compile. Ignore the warnings. There should be 0 errors.
 
 `dotnet build`{{execute}}
 
