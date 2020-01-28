@@ -7,7 +7,7 @@ Open location of editor:
 
 # Understand basic files
 
-Navigate to created foler. `cd specflow_api_tests`{{execute}}
+Navigate to created foler. `cd specflow_api_test`{{execute}}
 
 * Setup file where hooks are `specflow_api_tests/SpecFlowApiTests/Support/SetUp.cs`{{open}}
 
