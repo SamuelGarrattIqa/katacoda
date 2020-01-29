@@ -17,4 +17,4 @@ This uses the `_storeResult` object set in the previous step.
 [Fluent Assertions](https://www.fluentassertions.com/) are used to form the assertions. 
 A `Should()` method is used on the `Name` which defines this as an assertion. The `_name` variable which we used as an input is then used as the expected value.
 
-Run `dotnet test` and see the test fully pass.
+Run `dotnet test`{{execute}} and see the test fully pass.
