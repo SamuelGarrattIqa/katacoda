@@ -1,1 +1,1 @@
-[ dotnet test ] && echo "done"
+( dotnet test ) && echo "done"
