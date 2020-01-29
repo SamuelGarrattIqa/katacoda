@@ -42,7 +42,7 @@ namespace SpecFlowApiTests.StepDefinitions
 
 The `ScenarioContext.Current.Pending();` indicates that a step has not been implemented. 
 
-Open `StepDefinitions/PuppySteps.cs`{{open}} and paste the content above into it.
+Open `specflow_api_test/StepDefinitions/PuppySteps.cs`{{open}} and paste the content above into it.
 
 Run `dotnet test`{{execute}}. 
 

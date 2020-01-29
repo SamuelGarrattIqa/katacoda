@@ -7,7 +7,7 @@
     "steps": [
       {
         "title": "Get initial code and build it",
-        "text": "get_env.md"
+        "text": "setup_project.md"
       },
       {
         "title": "Create first feature",
@@ -18,8 +18,12 @@
         "text": "first_api_class.md"
       },
       {
-        "title": "Implement step defintions",
+        "title": "Implement first step defintion",
         "text": "implement_step_def_1.md"
+      },
+      {
+        "title": "Create API object and use it",
+        "text": "use_api_object.md"
       }
     ],
     "intro": {
