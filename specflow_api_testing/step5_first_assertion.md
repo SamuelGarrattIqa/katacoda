@@ -3,7 +3,7 @@ step definition file at `specflow_api_test/SpecFlowApiTests/StepDefinitions/Pupp
 the following code:
 
 ```csharp
-        Then(@"the puppy has the name specified")]
+        [Then(@"the puppy has the name specified")]
         public void ThenThePuppyHasTheNameSpecified()
         {
             // Assert that the name of the PetStore result is the same as the one set

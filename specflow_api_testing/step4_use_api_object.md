@@ -53,7 +53,7 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 Update the `WhenIOrderAPuppy()` method in `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} to be the following:
 
 ```csharp
-        When(@"I order a Puppy")]
+        [When(@"I order a Puppy")]
         public void WhenIOrderAPuppy()
         {
             // Create list of parameters that override the 'Defaults' when ordering from PetStore
