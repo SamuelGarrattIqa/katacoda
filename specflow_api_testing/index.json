@@ -7,23 +7,25 @@
     "steps": [
       {
         "title": "Get initial code and build it",
-        "text": "setup_project.md"
+        "text": "step1_setup_project.md",
+        "verify": "verify_test_working.sh"
       },
       {
-        "title": "Create first feature",
-        "text": "first_scenario.md"
-      },
-      {
-        "title": "Create first API class",
-        "text": "first_api_class.md"
-      },
+        "title": "Create first scenario",
+        "text": "step2_first_scenario.md"
+      },      
       {
         "title": "Implement first step defintion",
-        "text": "implement_step_def_1.md"
+        "text": "step3_implement_step_def_1.md"
       },
       {
         "title": "Create API object and use it",
-        "text": "use_api_object.md"
+        "text": "step4_use_api_object.md"
+      },
+      {
+        "title": "Create first assertion",
+        "text": "step5_first_assertion.md",
+        "verify": "verify_test_working.sh"
       }
     ],
     "intro": {

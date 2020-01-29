@@ -42,17 +42,20 @@ namespace SpecFlowApiTests.StepDefinitions
 
 The `ScenarioContext.Current.Pending();` indicates that a step has not been implemented. 
 
-Open `specflow_api_test/StepDefinitions/PuppySteps.cs`{{open}} and paste the content above into it.
+Open `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} and paste the content above into it.
 
 Run `dotnet test`{{execute}}. 
 
 You will see that it shows `Skipped: 1`, meaning that the test was skipped because it has not been implemented.
 
-# Add variable that will be used
+# Add variables that will be used
 
-Within the `public class PuppySteps` add a variable name that will be shared across step definitions with the following code
+Within the `public class PuppySteps` add variable names that will be shared across step definitions with the following code
 
-`private string _name = "Default name"; // Name of the puppy`
+```csharp
+private string _name = "Default name"; // Name of the puppy
+private PetStore _storeResult;         // PetStore object with Id, Name, Status properties
+```
 
 # Store name within variable from first step
 
