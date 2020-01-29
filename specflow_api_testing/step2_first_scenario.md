@@ -4,12 +4,12 @@ The first scenario will be to order a puppy with a specific name.
 
 Update the feature file at `specflow_api_test/SpecFlowApiTests/Features/Puppy.feature`{{open}} and add the following content:
 
-```gherkin
+<pre class="file" data-target="clipboard">
 Scenario: Order a Puppy with a specific name
 	  Given I want a puppy with a name of 'Laddie'
 	  When I order a Puppy
 	  Then the puppy has the name specified  
-```
+</pre>
 
 # Understand origin for scenario
 
