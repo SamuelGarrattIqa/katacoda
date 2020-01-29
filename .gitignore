@@ -1,2 +1,3 @@
 intro_to_ruby/Gemfile.lock
 tmp/
+*/.vs/
