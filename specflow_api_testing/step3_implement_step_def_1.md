@@ -50,7 +50,7 @@ You will see that it shows `Skipped: 1`, meaning that the test was skipped becau
 
 # Add variables that will be used
 
-Within the `public class PuppySteps` add variable names that will be shared across step definitions with the following code just below line 12
+Within the `public class PuppySteps` add variable names that will be shared across step definitions with the following code just below line 13
 
 <pre class="file" data-target="clipboard">
 private string _name = "Default name"; // Name of the puppy

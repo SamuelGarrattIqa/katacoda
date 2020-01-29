@@ -30,9 +30,9 @@ namespace SpecFlowApiTests.Lib.ApiObjects
         public string Status { get; set; }
         #endregion
 
-        public override Dictionary<string, JToken> DefaultCreateParameters()
+        public override Dictionary&lt;string, JToken&gt; DefaultCreateParameters()
         {
-            return new Dictionary<string, JToken>
+            return new Dictionary&lt;string, JToken&gt;
             {
                 { "name", "doggie" },
                 { "status", "available" } // This simulates a default of 'available' status from system for 2nd scenario
@@ -57,11 +57,11 @@ Update the `WhenIOrderAPuppy()` method in `specflow_api_test/SpecFlowApiTests/St
         public void WhenIOrderAPuppy()
         {
             // Create list of parameters that override the 'Defaults' when ordering from PetStore
-            var postParameters = new Dictionary<string, JToken> { { "name", _name } };
+            var postParameters = new Dictionary&lt;string, JToken&gt; { { "name", _name } };
             // Send a POST to PetStore API, storing response body in variable 'responseBody'
             var responseBody = new PetStore().Create(postParameters);
             // Convert response body from String to a 'PetStore' object
-            _storeResult = JsonConvert.DeserializeObject<PetStore>(responseBody);
+            _storeResult = JsonConvert.DeserializeObject&lt;PetStore&gt;(responseBody);
         }
 </pre>
 
