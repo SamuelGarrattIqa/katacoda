@@ -42,7 +42,7 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 }
 ```
 
-* Line 9 defines the class `PetStore` and defines that it will inherit from the `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/BackendDataBase.cs`{{open}} class. That class
+* Line 8 defines the class `PetStore` and defines that it will inherit from the `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/BackendDataBase.cs`{{open}} class. That class
   defines a convention for creating data (via a POST with the API) and retieving data from it. You will use the `Create` method in your next step definition
 * Line 10 defines the path that will be appended to the `ApiHost` defined at `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/ApiCommon.cs`{{open}}.
 * Lines 14-26 define properties that will be set when [deserialising the JSON response](https://www.newtonsoft.com/json/help/html/SerializingJSON.htm) returned by the API.
@@ -50,7 +50,7 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 
 # Use API object to order a pet
 
-Update the `WhenIOrderAPuppy()` method in `specflow_api_test/StepDefinitions/PuppySteps.cs`{{open}} to be the following:
+Update the `WhenIOrderAPuppy()` method in `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} to be the following:
 
 ```csharp
         When(@"I order a Puppy")]
