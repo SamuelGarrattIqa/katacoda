@@ -1,2 +1,1 @@
-#!/bin/sh
-dotnet test
+[ dotnet test ] && echo "done"
