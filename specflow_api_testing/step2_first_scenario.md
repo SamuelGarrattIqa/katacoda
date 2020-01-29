@@ -2,7 +2,7 @@ The first scenario will be to order a puppy with a specific name.
 
 # Add first scenario
 
-Update the feature file at `specflow_api_test/SpecFlowApiTests/Features/Puppy.feature`{{open}} and add replace the scenario line with the following content:
+Update the feature file at `specflow_api_test/SpecFlowApiTests/Features/Puppy.feature`{{open}} and replace the scenario line with the following content:
 
 <pre class="file" data-target="clipboard">
 Scenario: Order a Puppy with a specific name
