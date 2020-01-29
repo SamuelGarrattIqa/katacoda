@@ -33,10 +33,10 @@ There is only one unimplemented test that should pass. To run the test click
 
 `dotnet test`{{execute}}
 
-* There is also a Setup file, that contains step that helps setting up the test.
-The set up file can be viewed from here `specflow_api_test/SpecFlowApiTests/Support/SetUp.cs`{{open}}
+* There is also a Setup file, that contains steps that help setting up the test.
+The set up file can be viewed from `specflow_api_test/SpecFlowApiTests/Support/SetUp.cs`{{open}}
 
 Inside the setup method `lines 13-20` is code to set some basic settings for handling `JSON`. 
 The API request and responses are in Json format and hence we need something to handle it.
 It also stores a property `GetInformation.Client` that can be used for any API object. 
-It represents the client that submits the requests and recieves the response. 
+It represents the client that submits HTTP requests and receives their response. 

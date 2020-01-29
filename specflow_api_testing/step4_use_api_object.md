@@ -1,6 +1,7 @@
 # Create PetStore API object class
 
-Add the following text to a new file `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/PetStore.cs`{{open}}
+Add the following text to a new file `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/PetStore.cs`{{open}}.
+This is a class that will handle interactions with the API under test.
 
 <pre class="file" data-target="clipboard">
 using SpecFlowApiTest.Lib.ApiObjects;
@@ -70,4 +71,5 @@ in the previous step is being used.
 `new PetStore().Create(postParameters)` will send a `POST` method to the `PetStore` api and store the response body as a `String`. The next line then converts 
 this string into a `PetStore` object setting the parameters, `Id`, `Name`, and `Status`.
 
-Run this with `dotnet test`{{execute}}. You can see the HTTP traffic in a file created within the `Logs` folder.
+Run this with `dotnet test`{{execute}}. The output will still say 1 test is skipped (as the last step is still pending).
+You can see the HTTP traffic (from the 2nd step) in a file created within the `Logs` folder.
