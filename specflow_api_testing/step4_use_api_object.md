@@ -2,7 +2,7 @@
 
 Add the following text to a new file `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/PetStore.cs`{{open}}
 
-```csharp
+<pre class="file" data-target="clipboard">
 using SpecFlowApiTest.Lib.ApiObjects;
 using Newtonsoft.Json.Linq;
 using System;
@@ -40,7 +40,7 @@ namespace SpecFlowApiTests.Lib.ApiObjects
         }
     }
 }
-```
+</pre>
 
 * Line 8 defines the class `PetStore` and defines that it will inherit from the `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/BackendDataBase.cs`{{open}} class. That class
   defines a convention for creating data (via a POST with the API) and retieving data from it. You will use the `Create` method in your next step definition
@@ -52,7 +52,7 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 
 Update the `WhenIOrderAPuppy()` method in `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} to be the following:
 
-```csharp
+<pre class="file" data-target="clipboard">
         [When(@"I order a Puppy")]
         public void WhenIOrderAPuppy()
         {
@@ -63,7 +63,7 @@ Update the `WhenIOrderAPuppy()` method in `specflow_api_test/SpecFlowApiTests/St
             // Convert response body from String to a 'PetStore' object
             _storeResult = JsonConvert.DeserializeObject<PetStore>(responseBody);
         }
-```
+</pre>
 
 The `postParameters` are a list of parameters that will override the `DefaultCreateParameters` defined above. Here you can see that the `_name` variable defined 
 in the previous step is being used. 

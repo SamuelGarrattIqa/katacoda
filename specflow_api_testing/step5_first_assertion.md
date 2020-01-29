@@ -2,14 +2,14 @@ Now implement the last step of `specflow_api_test/SpecFlowApiTests/Features/Pupp
 step definition file at `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} with
 the following code:
 
-```csharp
+<pre class="file" data-target="clipboard">
         [Then(@"the puppy has the name specified")]
         public void ThenThePuppyHasTheNameSpecified()
         {
             // Assert that the name of the PetStore result is the same as the one set
             _storeResult.Name.Should().Be(_name);
         }
-```
+</pre>
 
 This uses the `_storeResult` object set in the previous step.  
 `_storeResult.Name` returns the `name` retrieved from the JSON response body.

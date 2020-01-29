@@ -6,7 +6,7 @@ When doing this in visual studio, one can auto generate the step definitions fro
 That will produce the following content shown within the `StepDefinitions` namespace below.
 For convenience, the libraries we'll use later are added in also below with `using` keyword.
 
-```csharp
+<pre class="file" data-target="clipboard">
 using SpecFlowApiTests.Lib.ApiObjects; // Added to reference the Api Object we defined previously
 using TechTalk.SpecFlow;
 using System.Collections.Generic; // Used for creating dictionaries
@@ -38,7 +38,7 @@ namespace SpecFlowApiTests.StepDefinitions
         }            
     }
 }
-```
+</pre>
 
 The `ScenarioContext.Current.Pending();` indicates that a step has not been implemented. 
 
@@ -52,25 +52,23 @@ You will see that it shows `Skipped: 1`, meaning that the test was skipped becau
 
 Within the `public class PuppySteps` add variable names that will be shared across step definitions with the following code just below line 12
 
-```csharp
+<pre class="file" data-target="clipboard">
 private string _name = "Default name"; // Name of the puppy
 private PetStore _storeResult;         // PetStore object with Id, Name, Status properties
-```
+</pre>
 
 # Store name within variable from first step
 
 Change the first step definition to have the following code:
 
-```csharp
+<pre class="file" data-target="clipboard">
 [Given(@"I want a puppy with a name of '(.*)'")]
         public void GivenIWantAPuppyWithANameOf(string name)
         {
             // Store name so it can be used in a future step
             _name = name;
         }
-```
+</pre>
 
 This step definition has a parameter which is set within single quotes in the feature file as 'Laddie'. We're taking it in and assiging it to the variable `_name` which
 will be used in further step definitions. 
-
-
