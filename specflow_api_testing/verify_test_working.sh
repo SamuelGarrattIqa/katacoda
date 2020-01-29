@@ -1,1 +1,1 @@
-( cd /home/scrapbook/tutorial/specflow_api_test && dotnet test ) && echo "done"
+( cd /home/scrapbook/tutorial/specflow_api_test && dotnet test >/dev/null ) && echo "done"
