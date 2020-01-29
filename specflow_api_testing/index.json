@@ -26,6 +26,10 @@
         "title": "Create first assertion",
         "text": "step5_first_assertion.md",
         "verify": "verify_test_working.sh"
+      },
+      {
+        "title": "Quiz",
+        "text": "step6_quiz.md"
       }
     ],
     "intro": {
