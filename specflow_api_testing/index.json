@@ -8,7 +8,7 @@
       {
         "title": "Get initial code and build it",
         "text": "step1_setup_project.md",
-        "verify": "verify_test_working.sh"
+        "verify": "verify_clone.sh"
       },
       {
         "title": "Create first scenario",
