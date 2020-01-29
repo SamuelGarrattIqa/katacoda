@@ -2,7 +2,7 @@ The first scenario will be to order a puppy with a specific name.
 
 # Add first scenario
 
-Update the feature file at `Features/Puppy.feature`{{open}} and add the following content:
+Update the feature file at `specflow_api_test/SpecFlowApiTests/Features/Puppy.feature`{{open}} and add the following content:
 
 ```gherkin
 Scenario: Order a Puppy with a specific name

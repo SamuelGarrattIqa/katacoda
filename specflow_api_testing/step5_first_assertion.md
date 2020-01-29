@@ -1,4 +1,5 @@
-Now implement the last step of `specflow_api_test/Features/Puppy.feature`{{open}} within the step definition file at `specflow_api_test/StepDefinitions/PuppySteps.cs`{{open}} with
+Now implement the last step of `specflow_api_test/SpecFlowApiTests/Features/Puppy.feature`{{open}} within the 
+step definition file at `specflow_api_test/SpecFlowApiTests/StepDefinitions/PuppySteps.cs`{{open}} with
 the following code:
 
 ```csharp
