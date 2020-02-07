@@ -13,15 +13,15 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 {
     class PetStoreApiService : BaseApiService
     {
-        public override string SubPath => "pet";
+        public override string SubPath =&gt; "pet";
 
-        public override string Description => "Pet";
+        public override string Description =&gt; "Pet";
 
-        /// <summary>
+        /// &lt;summary&gt;
         /// Create a new entity
-        /// </summary>
-        /// <param name="Name">Name of puppy</param>        
-        /// <returns>Id of Entity</returns>
+        /// &lt;/summary&gt;
+        /// &lt;param name="Name"&gt;Name of puppy&lt;/param&gt;        
+        /// &lt;returns&gt;Id of Entity&lt;/returns&gt;
         public string Create(PetStoreDto petStore)
         {            
             return CreateId(petStore.CreateObj());
