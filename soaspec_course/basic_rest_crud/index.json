@@ -1,0 +1,30 @@
+{
+    "noindex": true,
+    "title": "Basic CRUD for REST API",
+    "description": "Creating, reading, updating and deleting data using a REST API",
+    "details": {
+        "steps": [
+            {
+                "title": "First server up and running",
+                "text": "step1_first_server_running.md"
+            },
+            {
+                "title": "Create initial GET request against Test API",
+                "text": "step2.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "setup.sh",
+            "credits": "rest-client gem"
+        }
+    },
+    "environment": {
+        "uilayout": "terminal-terminal",
+        "uisettings": "ruby",
+        "uieditorpath": "/home/scrapbook/tutorial"
+    },
+    "backend": {
+        "imageid": "ruby"
+    }
+}
