@@ -30,6 +30,31 @@ namespace SpecFlowApiTests.Lib.ApiObjects
 }
 </pre>
 
+Within the `ApiService` class `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/ApiService/PetStoreApiService.cs`{{open}} add the following code to create
+static methods that will call methods on the `PetStoreApiService` class.
+
+<pre class="file" data-target="clipboard">
+/// &lt;summary&gt;
+/// Create Pet from a model of the pet properties
+/// &lt;/summary&gt;
+/// &lt;param name="petStore"&gt;Object for defining building a pet&lt;/param&gt;
+/// &lt;returns&gt;Response from creation of Pet&lt;/returns&gt;
+public static string Create(PetStoreDto petStore)
+{
+	return new PetStoreApiService().Create(petStore);
+}
+
+/// &lt;summary&gt;
+/// Get a Pet that has the provided Id
+/// &lt;/summary&gt;
+/// &lt;param name="petId"&gt;&lt;/param&gt;
+/// &lt;returns&gt;&lt;/returns&gt;
+public static string GetPet(string petId)
+{
+	return new PetStoreApiService().Get(petId);
+}
+</pre>
+
 Now create a class that will 
 
 * Line 8 defines the class `PetStore` and defines that it will inherit from the `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/BackendDataBase.cs`{{open}} class. That class
