@@ -1,5 +1,4 @@
 {
-    "noindex": true,
     "title": "Basic CRUD for REST API",
     "description": "Creating, reading, updating and deleting data using a REST API",
     "details": {
@@ -8,7 +7,7 @@
                 "title": "First server up and running",
                 "text": "step1_first_server_running.md"
             },
-            ,{
+            {
                 "title": "Create initial GET request against Test API",
                 "text": "step2_initial_get_request.md"
             },
