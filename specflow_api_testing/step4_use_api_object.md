@@ -1,47 +1,61 @@
 # Create PetStore API object class
 
-Add the following text to a new file `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/PetStore.cs`{{open}}.
+Add the following text to a new file `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/ApiService/PetStoreApiService.cs`{{open}}.
 This is a class that will handle interactions with the API under test.
 
 <pre class="file" data-target="clipboard">
 using SpecFlowApiTest.Lib.ApiObjects;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace SpecFlowApiTests.Lib.ApiObjects
 {
-    class PetStore : BackendDataBase
+    class PetStoreApiService : BaseApiService
     {
-        public override string SubPath => "pet";
+        public override string SubPath =&gt; "pet";
 
-        public override string Description => "Pet";
+        public override string Description =&gt; "Pet";
 
-        #region fields
-        /// <summary>
-        /// Unique Id of the pet
-        /// </summary>
-        public string Id { get; set; }
-
-        /// <summary>
-        /// Name to reference the pet by
-        /// </summary>
-        public string Name { get; set; }
-        
-        public string Status { get; set; }
-        #endregion
-
-        public override Dictionary&lt;string, JToken&gt; DefaultCreateParameters()
-        {
-            return new Dictionary&lt;string, JToken&gt;
-            {
-                { "name", "doggie" },
-                { "status", "available" } // This simulates a default of 'available' status from system for 2nd scenario
-            };
-        }
-    }
+        /// &lt;summary&gt;
+        /// Create a new entity
+        /// &lt;/summary&gt;
+        /// &lt;param name="Name"&gt;Name of puppy&lt;/param&gt;        
+        /// &lt;returns&gt;Id of Entity&lt;/returns&gt;
+        public string Create(PetStoreDto petStore)
+        {            
+            return CreateId(petStore.CreateObj());
+        }       
+    }    
 }
 </pre>
+
+Within the `ApiService` class `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/ApiService/PetStoreApiService.cs`{{open}} add the following code to create
+static methods that will call methods on the `PetStoreApiService` class.
+
+<pre class="file" data-target="clipboard">
+/// &lt;summary&gt;
+/// Create Pet from a model of the pet properties
+/// &lt;/summary&gt;
+/// &lt;param name="petStore"&gt;Object for defining building a pet&lt;/param&gt;
+/// &lt;returns&gt;Response from creation of Pet&lt;/returns&gt;
+public static string Create(PetStoreDto petStore)
+{
+	return new PetStoreApiService().Create(petStore);
+}
+
+/// &lt;summary&gt;
+/// Get a Pet that has the provided Id
+/// &lt;/summary&gt;
+/// &lt;param name="petId"&gt;&lt;/param&gt;
+/// &lt;returns&gt;&lt;/returns&gt;
+public static string GetPet(string petId)
+{
+	return new PetStoreApiService().Get(petId);
+}
+</pre>
+
+Now create a class that will 
 
 * Line 8 defines the class `PetStore` and defines that it will inherit from the `specflow_api_test/SpecFlowApiTests/Lib/ApiObjects/BackendDataBase.cs`{{open}} class. That class
   defines a convention for creating data (via a POST with the API) and retieving data from it. You will use the `Create` method in your next step definition
