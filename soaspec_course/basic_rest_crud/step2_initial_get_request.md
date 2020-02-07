@@ -18,6 +18,7 @@ Now call methods on it to see the different parts of it.
 
 * Scroll through methods on response object `response.public_methods`{{execute}} 
 (Type `q`{{execute}} to exit interactive scroller)
+* See class of response `response.class`{{execute}}
 * See response body `response.body`{{execute}}
 * See response HTTP status code `response.code`{{execute}}
 * See response headers `response.headers`{{execute}}
