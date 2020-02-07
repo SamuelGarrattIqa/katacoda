@@ -27,9 +27,7 @@
         }
     },
     "environment": {
-        "uilayout": "terminal-terminal",
-        "uisettings": "ruby",
-        "uieditorpath": "/home/scrapbook/tutorial"
+        "uilayout": "terminal-terminal"
     },
     "backend": {
         "imageid": "ruby"
