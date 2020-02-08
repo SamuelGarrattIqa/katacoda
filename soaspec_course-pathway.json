@@ -3,9 +3,10 @@
   "description": "Using the soaspec gem to perform API testing in a Ruby coded framework",
   "courses": [
     {
+      "pathway_id": "soaspec_course",
       "course_id": "basic_rest_crud",
       "title": "Scenario with Terminal UI",
-      "description": "Guide through creating tests to Create, read, update\nand delete data through a REST API"
+      "description": "Guide through creating tests to Create, read, update and delete data through a REST API"
     }
   ]
 }
