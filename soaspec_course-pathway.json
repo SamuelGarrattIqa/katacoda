@@ -1,6 +1,7 @@
 {
   "title": "Soaspec Api Testing",
   "description": "Using the soaspec gem to perform API testing in a Ruby coded framework",
+  "icon": "fa-katacoda",
   "courses": [
     {
       "pathway_id": "soaspec_course",
