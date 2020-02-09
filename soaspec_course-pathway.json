@@ -1,6 +1,6 @@
 {
   "title": "Soaspec Api Testing",
-  "description": "Using the soaspec gem to perform API testing in a Ruby coded framework",
+  "description": "Using Soaspec gem to perform API testing in a Ruby coded framework",
   "icon": "fa-katacoda",
   "courses": [
     {
