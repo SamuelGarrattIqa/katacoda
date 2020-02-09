@@ -1,0 +1,35 @@
+{
+    "title": "Basic CRUD for REST API",
+    "description": "Creating, reading, updating and deleting data using a REST API",
+    "details": {
+        "steps": [
+            {
+                "title": "First server up and running",
+                "text": "step1_first_server_running.md"
+            },
+            {
+                "title": "Create initial GET request against Test API",
+                "text": "step2_initial_get_request.md"
+            },
+            {
+                "title": "Model API through a class",
+                "text": "step3_model_api.md"
+            },
+            {
+                "title": "Create house",
+                "text": "step4_create_house.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "courseData": "setup.sh",
+            "credits": "rest-client gem"
+        }
+    },
+    "environment": {
+        "uilayout": "terminal-terminal"
+    },
+    "backend": {
+        "imageid": "ruby"
+    }
+}
